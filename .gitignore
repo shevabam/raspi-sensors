@@ -1,0 +1,3 @@
+/datas/*.sqlite
+/datas/cache.datas.json
+/datas/cache.zoom.json

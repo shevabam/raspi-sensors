@@ -1,0 +1,12 @@
+{
+  "app": {
+    "name": "raspi-sensors",
+    "version": "1.0",
+    "website": "https://github.com/shevabam/raspi-sensors",
+    "github": "https://github.com/shevabam",
+    "twitter": "shevabam",
+    "author_www": "https://www.shevarezo.fr"
+  },
+  "db": "",
+  "passwd": ""
+}

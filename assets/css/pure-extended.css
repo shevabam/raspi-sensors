@@ -1,0 +1,116 @@
+/* -------------------------- */
+/*  ==     pure-button        */
+/* -------------------------- */
+.pure-button {
+    color: #fff;
+    border-radius: 4px;
+}
+.pure-button-xsmall {
+    font-size: 70%;
+}
+.pure-button-small {
+    font-size: 85%;
+}
+.pure-button-large {
+    font-size: 110%;
+}
+.pure-button-xlarge {
+    font-size: 125%;
+}
+.pure-button-success,
+.pure-button-error,
+.pure-button-warning,
+.pure-button-secondary {
+    color: #fff;
+}
+.pure-button-success {
+    background: rgb(28, 184, 65);
+}
+.pure-button-error {
+    background: rgb(202, 60, 60);
+}
+.pure-button-warning {
+    background: rgb(223, 117, 20);
+}
+.pure-button-secondary {
+    background: rgb(66, 184, 221);
+}
+.pure-button-basic {
+    background: #D8D8D8;
+}
+.pure-button-black {
+    background: #6A6A6A;
+}
+.pure-button-primary {
+    background: #BC1142;
+}
+.pure-button-brown {
+    background: #DF3969;
+}
+
+
+/* ------------------------- */
+/*  ==     pure-table        */
+/* ------------------------- */
+table.pure-table thead th {
+    color: #444;
+    vertical-align: middle;
+}
+table.pure-table tbody td {
+    background-color: #fff;
+}
+
+
+/* --------------------------- */
+/*  ==     pure-message        */
+/* --------------------------- */
+.pure-message {
+    margin: 5px auto;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 2px;
+}
+.pure-message-error {
+    color: #BD6060;
+    background-color: #ffdfdf;
+}
+.pure-message-warning {
+    color: #CEA176;
+    background-color: #ffffdd;
+}
+.pure-message-success {
+    color: #80A75F;
+    background-color: #D6E9C6;
+}
+.pure-message-info {
+    color: #5D92BB;
+    background-color: #e1f2ff;
+}
+
+
+/* ------------------------- */
+/*  ==     pure-label        */
+/* ------------------------- */
+.pure-label {
+    padding: 1px 3px 2px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    white-space: nowrap;
+    background-color: #bfbfbf;
+    border-radius: 3px;
+}
+.pure-label.pure-label-success {
+    background-color: #46a546;
+}
+.pure-label.pure-label-warning {
+    background-color: #f89406;
+}
+.pure-label.pure-label-important, .pure-label.pure-label-error {
+    background-color: #c43c35;
+}
+.pure-label.pure-label-notice {
+    background-color: #62cffc;
+}

@@ -1,0 +1,48 @@
+.gnotifier_notifications {
+    width: 400px;
+    position: fixed;
+    z-index: 2000000;
+    font: normal 12px Helvetica, Arial, sans-serif;
+    color: #000;
+}
+.gnotifier_notifications > .gnotifier_notif {
+    position: relative;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 0 20px;
+    color: #000;
+}
+.gnotifier_notifications > .gnotifier_notif h2 {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 0;
+    margin: 0;
+}
+.gnotifier_notifications > .gnotifier_notif p {
+    margin: 0;
+    padding: 0 0 10px 0;
+}
+
+/* Success */
+.gnotifier_notifications > .gnotifier_notif.success {
+    background-color: #63a153;
+    color: #fff;
+}
+
+/* Warning */
+.gnotifier_notifications > .gnotifier_notif.warning {
+    background: #edc86d;
+    color: #fff;
+}
+
+/* Error */
+.gnotifier_notifications > .gnotifier_notif.error {
+    background-color: #DF3940;
+    color: #fff;
+}
+
+/* Notice */
+.gnotifier_notifications > .gnotifier_notif.notice {
+    background: #8FBEDA;
+    color: #fff;
+}

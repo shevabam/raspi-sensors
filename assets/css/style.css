@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.cls { clear: both; }
+.t-center { text-align: center; }
+.t-right { text-align: right; }
+.t-left { text-align: left; }
+
+@font-face {
+  font-family: 'Aldrich';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Aldrich'), url(../fonts/Aldrich.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Kanit-Thin'), url(../fonts/Kanit-Thin.ttf) format('truetype'), url(../fonts/Kanit-Thin.otf) format('otf');
+}
+
+html, body {
+    padding: 30px 0 20px 0;
+}
+body {
+    font-family: Verdana, Helvetica, Arial;
+    font-size: 14px;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 10px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #BC1142;
+    z-index: 9;
+}
+header h1 {
+    margin: 0;
+    font-family: Aldrich, Verdana, Arial;
+    font-size: 24px;
+    font-weight: normal;
+    color: #fff;
+    float: left;
+}
+header h1 a {
+    color: #fff;
+    text-decoration: none;
+}
+header ul {
+    list-style-type: none;
+    float: right;
+}
+header ul li {
+    display: inline-block;
+}
+
+/* Top nav */
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+nav li.pure-menu-item {
+    margin-right: 20px;
+    border-bottom: 3px solid transparent;
+}
+nav li.pure-menu-selected {
+    border-bottom-color: #DAD8D8;
+}
+nav li a {
+    font-size: 110%;
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 10px;
+    height: 28px;
+    line-height: 28px;
+    background-color: #404040;
+    font-size: 12px;
+    color: #ccc;
+}
+footer ul {
+    list-style-type: none;
+}
+footer li {
+    display: inline-block;
+    margin-left: 10px;
+}
+footer a {
+    color: #ccc;
+}
+footer a:hover {
+    text-decoration: none;
+}
+footer .links {
+     text-align: right
+}
+
+/* Main */
+.main-container {
+    margin: 0 20px;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.main-container h2 {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-family: Verdana, Arial;
+    font-weight: normal;
+    color: #5E5E5E;
+    font-size: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 3px;
+}
+
+.main-container table {
+    width: 99%;
+}
+.main-container table tbody tr td.s_name { width: 250px; }
+.main-container table tbody tr td.s_color { width: 120px; }
+.main-container table tbody tr td.s_number { width: 150px; }
+.main-container table tbody tr td.s_enabled { width: 120px; }
+.main-container table tbody tr td.g_name {  }
+.main-container table tbody tr td.g_number { width: 150px; }
+
+.main-container table tbody tr td.action.edit { width: 57px; }
+.main-container table tbody tr td.action.delete { width: 90px; }
+
+.main-container a:hover {
+    text-decoration: none;
+}
+
+
+/* Home - Gauges */
+.gauges {
+    text-align: center;
+    padding: 10px 0;
+}
+.gauges .gauge {
+    display: inline-block;
+    position: relative;
+    margin-right: 50px;
+    width: 215px;
+    height: 215px;
+    text-align: center;
+    font-family: Kanit, sans-serif;
+    font-size: 50px;
+    font-weight: 100;
+    color: #a7a7a7;
+    background-color: #f7f7f7;
+    border-radius: 50%;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), to(#e7e7e7));
+    background-image: -webkit-linear-gradient(top, #f7f7f7, #e7e7e7);
+    background-image: -moz-linear-gradient(top, #f7f7f7, #e7e7e7);
+    background-image: -ms-linear-gradient(top, #f7f7f7, #e7e7e7);
+    background-image: -o-linear-gradient(top, #f7f7f7, #e7e7e7);
+    box-shadow: 0 1px 14px #aaa, inset 0 2px 3px #fff;
+}
+.gauges .gauge:last-child {
+    margin-right: 0;
+}
+.gauges .gauge span.name {
+    display: block;
+    font-size: 18px;
+    margin-top: 40px;
+}
+.gauges .gauge span.temp {
+    display: block;
+}
+.gauges .gauge span.date {
+    display: block;
+    font-size: 15px;
+}
+
+/* Home - Chart */
+#chart {
+    margin-top: 20px;
+    width: 100%;
+    height: 500px;
+}
+
+
+/* Form */
+label.label {
+    line-height: 20px;
+    display: block;
+    width: 135px;
+    float: left;
+    clear: left;
+    text-align: left;
+    margin-right: 10px;
+}
+label.label.label-large {
+    width: 200px;
+}
+
+.form-row {
+    margin-bottom: 15px;
+}
+.form-row:last-child {
+    margin-bottom: 0;
+}
+input[type="text"], select {
+    width: 250px;
+}
+input[required], select[required] {
+    background-image: radial-gradient(red 15%, transparent 16%), radial-gradient(red 15%, transparent 16%);
+    background-size: 1.2em 1.2em;
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+#url_add input[type="text"], #url_add select,
+#url_edit input[type="text"], #url_edit select {
+    width: 60%;
+}
+
+#manage_edit span.info {
+    display: block;
+    margin-left: 210px;
+    margin-top: 3px;
+    font-size: 12px;
+    font-style: italic;
+    color: #888;
+}
+
+
+/* ------------------------ */
+/*  ==     Modal box        */
+/* ------------------------ */
+.white-popup {
+  position: relative;
+  background: #fff;
+  padding: 20px;
+  width: auto;
+  max-width: 80%;
+  margin: 20px auto;
+}
+.white-popup h1 {
+    margin: 0 0 15px 0;
+    color: #5E5E5E;
+    font-size: 20px;
+    font-weight: normal;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+
+/* ------------------------- */
+/*  ==     Responsive        */
+/* ------------------------- */
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+    table, thead, tbody, th, td, tr { 
+        display: block; 
+    }
+    thead tr { 
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    tr {
+        border: 1px solid #ccc;
+    }
+    td { 
+        border: none;
+        border-bottom: 1px solid #eee; 
+        position: relative;
+        padding-left: 50%; 
+        /*width: 99% !important;*/
+    }
+    td:first-child {
+        font-weight: bold;
+    }
+    table.pure-table-horizontal td, table.pure-table-striped td {
+        border: none;
+        background-color: transparent !important;
+    }
+    td:before { 
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%; 
+        padding-right: 10px; 
+        white-space: nowrap;
+    }
+
+    .gauges .gauge {
+        margin-top: 20px;
+        margin-right: 0;
+    }
+}
+
