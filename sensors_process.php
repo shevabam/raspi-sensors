@@ -1,5 +1,6 @@
 <?php
 require 'assets/_checker.php';
+User::checkIfIsAuthenticated();
 
 $action = $_GET['action'];
 
